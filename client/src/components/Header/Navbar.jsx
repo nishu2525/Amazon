@@ -40,7 +40,7 @@ function Navbar() {
   // {_id: 127, title: "Women's Fashion"},
   // ]
   return (
-    <div className="w-full">
+    <div className="w-full sticky top-0 z-50">
       <div className=' bg-amazon_blue text-white px-4  flex items-center gap-4'>
         <div className='px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100'>
           <img src={logo} alt='logo' className='w-24 mt-2' />
