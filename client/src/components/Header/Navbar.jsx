@@ -5,6 +5,7 @@ import ArrowDropDownIcon from "@mui/icons-material/ArrowDropDown";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { allItems } from "../../constants";
+import HeaderBottom from "./HeaderBottom";
 
 function Navbar() {
   const [showAll, setShowAll] = useState(false);
@@ -39,8 +40,8 @@ function Navbar() {
   // {_id: 127, title: "Women's Fashion"},
   // ]
   return (
-    <div>
-      <div className='w-full bg-amazon_blue text-white px-4 py-1 flex items-center gap-4'>
+    <div className="w-full">
+      <div className=' bg-amazon_blue text-white px-4  flex items-center gap-4'>
         <div className='px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100'>
           <img src={logo} alt='logo' className='w-24 mt-2' />
         </div>
@@ -103,6 +104,7 @@ function Navbar() {
             <p className="text-sm font-semibol  text-whiteText">Cart <span className="text-xs relative -top-12 left-4 font-semibold p-1 h-4 w-3 bg-[#f3a847] text-amazon_blue rounded-full flex justify-center items-center">0</span></p>
         </div>
       </div>
+      <HeaderBottom/>
     </div>
   );
 }
