@@ -1,13 +1,11 @@
-
+import Banner from './components/Carosule/Banner';
 import Navbar from './components/Header/Navbar';
 
 function App() {
   return (
    <div className='font-bodyFont'>
    <Navbar/>
-   <h1 className="text-3xl font-bold underline">
-      
-    </h1>
+   <Banner/>
    </div>
   );
 }
