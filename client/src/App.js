@@ -10,6 +10,8 @@ import {
 } from "react-router-dom";
 import Home from './pages/Home';
 import { productsData } from './api/api';
+import Signin from './pages/Signin';
+import Signup from './pages/Signup';
 const Layout =()=>{
   return (
     <div>
@@ -19,13 +21,26 @@ const Layout =()=>{
     </div>
   )
 }
+const AuthLayout = () => {
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
+};
 
 function App() {
   const router = createBrowserRouter(
     createRoutesFromElements(
-      <Route path="/" element={<Layout />}>
-        <Route index element={<Home />} loader={productsData}></Route>
-      </Route>
+      <>
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} loader={productsData} />
+        </Route>
+        <Route element={<AuthLayout />}>
+          <Route path="/signin" element={<Signin />} />
+          <Route path="/signup" element={<Signup />} />
+        </Route>
+      </>
     )
   );
   return (

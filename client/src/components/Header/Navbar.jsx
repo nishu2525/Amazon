@@ -6,6 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { allItems } from "../../constants";
 import HeaderBottom from "./HeaderBottom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [showAll, setShowAll] = useState(false);
@@ -43,7 +44,7 @@ function Navbar() {
     <div className="w-full sticky top-0 z-50">
       <div className=' bg-amazon_blue text-white px-4  flex items-center gap-4'>
         <div className='px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100'>
-          <img src={logo} alt='logo' className='w-24 mt-2' />
+          <Link to='/'><img src={logo} alt='logo' className='w-24 mt-2' /></Link>
         </div>
         <div className='px-2 h-[80%] flex items-center border border-transparent hover:border-white cursor-pointer duration-100'>
           <LocationOnIcon />
@@ -81,6 +82,7 @@ function Navbar() {
             <SearchIcon />{" "}
           </span>
         </div>
+        <Link to="/signin"> 
         <div className='flex flex-col justify-center h-[80%]   border border-transparent px-2  hover:border-white cursor-pointer duration-100'>
           <p className='text-xs text-lightText font-light'>Hello Sign in</p>
           <p className='text-sm font-semibold -mt-1 text-whiteText'>
@@ -90,10 +92,11 @@ function Navbar() {
             </span>
           </p>
         </div>
+        </Link>
         <div className='flex flex-col justify-center h-[80%]   border border-transparent px-2  hover:border-white cursor-pointer duration-100'>
-          <p className='text-xs text-lightText font-light'>Hello Sign in</p>
+          <p className='text-xs text-lightText font-light'>Returns</p>
           <p className='text-sm font-semibold -mt-1 text-whiteText'>
-            Accounts & List{" "}
+            & Orders{" "}
             <span>
               <ArrowDropDownIcon />
             </span>
