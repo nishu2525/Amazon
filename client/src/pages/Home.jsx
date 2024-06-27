@@ -5,7 +5,10 @@ function Home() {
   return (
     <div>
       <Banner/>
+      <div className='w-full -mt-36'>
       <Products/>
+      </div>
+  
     </div>
   )
 }
