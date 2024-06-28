@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Amazon/static/css/main.e9fda85d.css",
+    "main.js": "/Amazon/static/js/main.a5e06887.js",
+    "static/media/bannerImgTwo.jpg": "/Amazon/static/media/bannerImgTwo.bc1bdb910ead16c65197.jpg",
+    "static/media/bannerImgFour.jpg": "/Amazon/static/media/bannerImgFour.8f7fc6b56e74dba2b6f9.jpg",
+    "static/media/bannerImgOne.jpg": "/Amazon/static/media/bannerImgOne.efb3d39101f7ef77d616.jpg",
+    "static/media/bannerImgThree.jpg": "/Amazon/static/media/bannerImgThree.c80809bb40bee5c34372.jpg",
+    "static/media/bannerImgFive.jpg": "/Amazon/static/media/bannerImgFive.aa945e25375bfdee385f.jpg",
+    "static/media/logo.png": "/Amazon/static/media/logo.1c9be0b254d3ff1dc9e9.png",
+    "static/media/emptyCart.png": "/Amazon/static/media/emptyCart.230e4848b62fb3cab325.png",
+    "index.html": "/Amazon/index.html",
+    "main.e9fda85d.css.map": "/Amazon/static/css/main.e9fda85d.css.map",
+    "main.a5e06887.js.map": "/Amazon/static/js/main.a5e06887.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e9fda85d.css",
+    "static/js/main.a5e06887.js"
+  ]
+}
