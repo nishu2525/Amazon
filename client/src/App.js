@@ -12,6 +12,7 @@ import Home from './pages/Home';
 import { productsData } from './api/api';
 import Signin from './pages/Signin';
 import Signup from './pages/Signup';
+import ProductsDetails from './components/Product/ProductsDetails';
 const Layout =()=>{
   return (
     <div>
@@ -35,11 +36,13 @@ function App() {
       <>
         <Route element={<Layout />}>
           <Route path="/" element={<Home />} loader={productsData} />
+          <Route path='/productdetails/:id' element={<ProductsDetails/>}/>
         </Route>
         <Route element={<AuthLayout />}>
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
         </Route>
+
       </>
     )
   );

@@ -1,6 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 function Signin() {
+  const [logdata,setLogdata] =useState({
+    email:"",
+    password:""
+  });
+  console.log(logdata);
+  const addData=(e)=>{
+    const {name,value}=e.target
+    
+    setLogdata(()=>{
+      return{
+        ...logdata,
+        [name]:value
+      }
+    })
+  }
   return (
     <div className='w-full'>
     <div className='w-full bg-gray-100 h-screen'>
@@ -11,9 +26,9 @@ function Signin() {
           <div>
             <div className='pt-4 flex flex-col gap-2'>
           <label>Email or phone number</label>
-          <input type="email" placeholder='Email' className='p-1 pl-2 mb-2' />
+          <input onChange={addData} value={logdata.email} type="email" name="email" placeholder='Email' className='p-1 pl-2 mb-2' />
           <label>Password</label>
-          <input type="password" placeholder='Password' className='p-1 pl-2 mb-2' />
+          <input onChange={addData} value={logdata.password} type="password" name='password' placeholder='Password' className='p-1 pl-2 mb-2' />
             </div>
             <button className='w-full py-1.5 rounded-md mt-3 font-titleFont font-medium text-base bg-gradient-to-tr from-yellow-400 to-yellow-200 border border-yellow-500 hover:border-yellow-700 hover:from-yellow-300 to hover:to-yellow-400 active:bg-gradient-to-bl active:from-yellow-400 active:to-yellow-500 duration-200'>Continue</button>
          <p className='text-xs text-black mt-2 ml-2'>By continuing, you agree to Amazon's <span className='text-sm text-blue-500'>Conditions of Use</span> and <span className='text-sm text-blue-500'>Privacy Notice.</span></p>

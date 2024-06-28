@@ -111,8 +111,19 @@ function HeaderBottom() {
                <li>Birthday Gift Cards</li>
               </ul>
               </div>
+              <div className='pl-3 border-b-2 py-2'>
+                <h3 className='text-lg font-titleFont font-semibold mb-1 pl-3'>
+                  Shop by Category
+                </h3>
+                <ul className='pl-4 text-sm flex flex-col gap-2 '>
+                  <li>Mobiles, Computers</li> 
+                  <li> TV, Appliances, Electronics</li>
+                  <li>Men's Fashion</li>
+                  <li>Women's Fashion</li>
+                </ul>
+              </div>
             </div>
-          <span onClick={()=>setSidebar(false)} className="cursor-pointer absolute top-0 left-[16rem] w-10 h-11 text-black flex items-center justify-center border bg-gray-200 hover:bg-red-500 hover: text-white duration-300"><CloseIcon/></span>
+          <span onClick={()=>setSidebar(false)} className="cursor-pointer absolute top-0 left-[16rem] w-10 h-11 flex items-center justify-center border bg-gray-200 hover:bg-red-500 hover: text-white duration-300"><CloseIcon/></span>
           </div>
         </div>
       )}
